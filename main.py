@@ -9,7 +9,6 @@
     2.安装GADL3.0以下的版本
 '''
 import sys, time,os
-#test
 if hasattr(sys, 'frozen'):
     os.environ['PATH'] = sys._MEIPASS + ";" + os.environ['PATH']# 脚本打包后由于不再是由Python解释脚本的形式运行，__file__变量会失去作用。此时具有类似效用的是sys.executable，同时可以利用sys.frozen属性来判断是打包的exe还是py脚本。需要在导入PyQt5之前引入该语句。
 import cv2 as cv
